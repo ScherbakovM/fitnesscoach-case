@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="preload"
+      href="./fonts/Inter/Inter-VariableFont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Arimo/Arimo-VariableFont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Arimo/Arimo-Italic-VariableFont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./styles/bundle.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Помогу построить сильное, функциональное тело через систему тренировок, питание и прогрессивные нагрузки. Персональный тренер Владислав Орлов — программы тренировок, консультации по питанию."
+    />
+    <title>Персональный тренер</title>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/gsap.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/Draggable.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/DrawSVGPlugin.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/ScrollTrigger.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/ScrollSmoother.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/SplitText.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/TextPlugin.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/MorphSVGPlugin.min.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://unpkg.com/gsap@3.15/dist/InertiaPlugin.min.js"
+      defer="defer"
+    ></script>
+    <script src="./main.js" defer="defer"></script>
+  </head>
+
+  <body>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="hero">
+          <div class="hero__container">
+            <div class="hero__left">
+              <p class="hero__tag">Владислав Орлов</p>
+              <p class="hero__tag__description">твой тренер</p>
+              <div class="hero__image__mobile">
+                <div class="hero__image__mobile__container">
+                  <img
+                    fetchpriority="high"
+                    decoding="async"
+                    class="hero__background"
+                    src="/images/bgForCoatch2.avif"
+                    alt="фото тренера фон"
+                  />
+                  <img
+                    fetchpriority="high"
+                    decoding="async"
+                    class="hero__person"
+                    src="/images/coatch1.webp"
+                    alt="Тренер"
+                  />
+                </div>
+              </div>
+              <h1 class="hero__title">
+                ПОМОГУ<br />ПОСТРОИТЬ<br /><span>ТЕЛО МЕЧТЫ</span>
+              </h1>
+              <p class="hero__text">
+                Помогаю людям выстраивать сильное, функциональное тело через
+                систему тренировок, питание и прогрессивные нагрузки.
+              </p>
+              <div class="hero__buttons">
+                <button class="btn btn--primary hero__btn contacts__button">
+                  <div class="btn__icon--wrapper">
+                    <svg
+                      class="btn__icon btn__icon--top"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                      class="button-005__icon"
+                    >
+                      <path
+                        d="M14 19L21 12L14 5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                      ></path>
+                      <path
+                        d="M21 12H2"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="btn__icon btn__icon--bottom"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                      class="button-005__icon"
+                    >
+                      <path
+                        d="M14 19L21 12L14 5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                      ></path>
+                      <path
+                        d="M21 12H2"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="btn__text--wrapper hero--wrapper">
+                    <span class="btn__text btn__text--top">Начать путь</span
+                    ><span class="btn__text btn__text--bottom"
+                      >Начать путь</span
+                    >
+                  </div></button
+                ><button class="btn btn--draw">
+                  Программы
+                  <div class="btn__line--wrapper">
+                    <svg
+                      class="btn__line"
+                      width="1110"
+                      height="443"
+                      viewBox="0 0 1110 443"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="customPath"
+                        d="M51.5022 108.772C60.5182 109.416 69.5342 110.06 203.945 103.308C338.356 96.5558 597.889 82.3878 732.875 74.7671C867.862 67.1464 870.438 66.5024 880.781 66.1706C934.815 64.4375 962.081 61.9358 978.103 60.3161C989.484 59.1656 997.97 57.3888 999.931 56.091C1015.08 46.0658 947.952 55.4178 927.822 56.4033C916.117 56.9764 904.375 58.0328 863.393 64.1508C828.07 69.4239 763.807 82.5049 683.619 94.9263C603.431 107.348 509.407 119.584 449.056 128.463C388.705 137.343 364.877 142.495 330.384 147.725C295.891 152.955 251.455 158.107 226.632 160.761C190.732 164.599 176.478 168.606 160.221 170.235C125.528 173.713 115.922 175.768 112.029 177.066C110.067 177.719 108.135 178.363 135.476 175.475C162.817 172.587 219.489 166.147 317.592 159.609C415.695 153.072 553.511 146.632 628.049 142.67C702.588 138.709 709.672 137.421 737.149 135.791C764.626 134.162 812.283 132.23 839.731 131.556C867.179 130.883 872.975 131.527 887.553 131.859C953.693 133.364 969.302 130.239 982.972 128.619C986.872 128.157 991.393 128.288 992.427 127.966C1009.42 122.676 938.234 128.912 914.854 132.171C903.787 133.714 885.816 137.967 824.684 147.042C763.553 156.116 659.869 170.284 589.068 182.091C518.267 193.898 483.491 202.914 459.78 209.49C436.069 216.067 424.477 219.931 408.845 223.531C374.143 231.525 350.124 233.67 341.371 233.992C330.65 234.386 313.123 235.621 283.323 236.909C265.087 237.697 240.643 240.773 219.021 242.744C157.6 248.343 144.59 249.282 126.06 252.521C109.621 255.395 101.617 255.136 99.9682 255.136C99.0412 255.136 105.403 255.136 109.013 254.814C112.624 254.492 115.2 253.848 203.789 249.008C292.378 244.169 466.903 235.153 560.673 229.864C654.444 224.575 662.172 223.287 672.915 222.624C697.145 221.127 722.064 220.672 741.55 218.721C755.828 217.291 767.651 217.413 811.209 216.438C848.963 215.592 918.523 216.106 955.319 215.784C992.115 215.462 994.047 214.818 994.076 213.842C994.666 194.171 933.043 211.539 910.259 212.525C904.371 212.779 898.579 213.491 878.849 214.789C859.119 216.086 825.631 218.018 724.015 232.538C622.4 247.057 453.671 274.105 364.175 288.039C274.678 301.973 269.526 301.973 262.042 302.617C229.748 305.396 211.605 307.164 194.353 310.091C178.841 312.723 164.768 314.97 149.459 315.955C135.391 316.861 121.171 318.873 103.608 321.156C99.6848 321.666 97.0897 321.488 94.4747 322.132C91.8596 322.776 89.2836 324.064 94.0746 324.727C110.953 327.065 142.384 323.459 174.868 320.532C188.654 319.289 197.047 319.536 215.205 317.926C233.364 316.316 261.056 313.096 389.954 306.608C518.852 300.119 748.117 290.459 867.833 285.16C987.549 279.862 990.769 279.218 994.037 278.886C1000.5 278.23 1005.78 277.911 1006.45 276.935C1009.73 272.18 994.106 277.247 937.726 284.985C883.329 292.451 776.375 305.603 689.425 317.721C602.475 329.84 538.719 340.144 502.976 346.419C461.273 353.739 450.315 357.259 438.001 359.523C421.563 362.545 397.721 368.949 348.875 373.818C314.931 377.201 262.032 378.043 226.134 380.648C172.671 384.528 149.781 389.791 140.365 390.113C132.823 390.371 121.835 391.743 111.414 391.421C102.295 391.139 145.058 388.503 166.486 386.552C176.303 385.657 184.049 385.888 311.035 377.516C438.02 369.144 684.029 352.4 812.37 343.452C940.712 334.505 943.932 333.861 949.777 333.529C974.531 332.124 982.338 329.958 1021.24 328.65C1036.9 326.718 1044.81 324.747 1049.02 323.449C1051.3 322.795 1053.88 322.151 1058.49 323.439"
+                        stroke="#C8F901"
+                        stroke-width="103"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="hero__right">
+              <img
+                fetchpriority="high"
+                decoding="async"
+                class="hero__desktop__image"
+                src="/images/coatch1.webp"
+                alt="тренер"
+              />
+            </div>
+          </div>
+        </main>
+        <div class="spacer">
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">500+</div>
+              <div class="stat__label">КЛИЕНТОВ</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">10к</div>
+              <div class="stat__label">ТРЕНИРОВОК</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">15 лет</div>
+              <div class="stat__label">ОПЫТА</div>
+            </div>
+          </div>
+        </div>
+        <section class="whyme">
+          <div class="whyme__container">
+            <div class="whyme__logo">Несколько фактов<br />обо мне</div>
+            <div class="why__list">
+              <div class="why__blok">
+                <div class="why__icon--container">
+                  <svg
+                    class="why__icon"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.75 3.25012C4.09315 3.25012 2.75 4.59327 2.75 6.25012C2.75 6.81878 2.90822 7.35049 3.18304 7.80362C1.79727 8.06867 0.75 9.28712 0.75 10.7501C0.75 12.2131 1.79727 13.4315 3.18304 13.6966M4.75 12.4208C4.09207 12.6533 3.53948 13.1089 3.18304 13.6966C2.90822 14.1497 2.75 14.6814 2.75 15.2501C2.75 16.907 4.09315 18.2501 5.75 18.2501C5.75 19.6308 6.86929 20.7501 8.25 20.7501C9.6307 20.7501 10.75 19.6308 10.75 18.2501V3.25012C10.75 1.86941 9.6307 0.750122 8.25 0.750122C6.86929 0.750122 5.75 1.86941 5.75 3.25012M5.75 3.25012C5.75 4.06803 6.14278 4.7942 6.75 5.2503"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.75 18.25C17.4069 18.25 18.75 16.9068 18.75 15.25C18.75 14.6813 18.5918 14.1496 18.317 13.6965C19.7027 13.4314 20.75 12.213 20.75 10.75C20.75 9.28702 19.7027 8.06855 18.317 7.8035M15.75 18.25C15.75 19.6307 14.6307 20.75 13.25 20.75C11.8693 20.75 10.75 19.6307 10.75 18.25V3.25C10.75 1.86929 11.8693 0.75 13.25 0.75C14.6307 0.75 15.75 1.86929 15.75 3.25C17.4069 3.25 18.75 4.59314 18.75 6.25C18.75 6.81866 18.5918 7.35036 18.317 7.8035M15.75 18.25C15.75 17.4321 15.3572 16.7059 14.75 16.2498M18.317 7.8035C17.9605 8.39121 17.4079 8.84672 16.75 9.07932"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="why__blok--name">Образование</div>
+                <p class="why__blok--text">
+                  Я получил профильное образование в НГУ им. П. Ф. Лесгафта
+                  (физическая культура и спорт), где изучал анатомию,
+                  биомеханику и теорию тренинга. Регулярно прохожу профильные
+                  курсы и слежу за современными исследованиями, чтобы
+                  использовать в работе только эффективные и безопасные подходы.
+                </p>
+              </div>
+              <div class="why__blok experience">
+                <div class="why__icon--container muscle">
+                  <svg
+                    class="why__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="34"
+                    height="34"
+                    color="#141414"
+                    fill="none"
+                    stroke="#141414"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M2.01792 20.3051C3.14656 21.9196 8.05942 23.1871 10.3797 20.1645C12.8894 21.3649 17.0289 20.9928 20.3991 19.1134C20.8678 18.8521 21.3112 18.5222 21.5827 18.0593C22.1957 17.0143 22.2102 15.5644 21.0919 13.4251C19.2274 8.77072 15.874 4.68513 14.5201 3.04212C14.2421 2.78865 12.4687 2.42868 11.3872 2.08279C10.9095 1.93477 10.02 1.83664 8.95612 3.23862C8.45176 3.90329 6.16059 5.5357 9.06767 6.63346C9.51805 6.74806 9.84912 6.95939 11.9038 6.58404C12.1714 6.53761 12.8395 6.58404 13.3103 7.41041L14.2936 8.81662C14.3851 8.94752 14.4445 9.09813 14.4627 9.25682C14.635 10.7557 14.6294 12.6323 15.4651 13.5826C14.1743 12.6492 10.8011 11.5406 8.2595 14.6951M2.00189 12.94C3.21009 11.791 6.71197 9.97592 10.4179 12.5216"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="why__blok--name">Опыт</div>
+                <p class="why__blok--text">
+                  Прошёл путь от отсутствия системы, ошибок в тренировках и
+                  питании до стабильной физической формы, дисциплины и
+                  понимания, как реально работает тело. Этот опыт стал основой
+                  моей работы: я не теоретик, а практик, который понимает через
+                  что проходит человек на каждом этапе трансформации.
+                </p>
+              </div>
+            </div>
+            <div class="achievements">
+              <div class="achievements__left">
+                <div class="achievements__icon--container">
+                  <svg
+                    class="achievements__icon"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 15 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.25012 20.7502C10.84 20.7502 13.7501 17.8401 13.7501 14.2502C13.7501 10.6604 10.84 7.75024 7.25012 7.75024C3.66027 7.75024 0.750122 10.6604 0.750122 14.2502C0.750122 17.8401 3.66027 20.7502 7.25012 20.7502Z"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M4.25012 8.25024L0.750122 0.750244"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.2501 8.25024L13.7501 0.750244"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.2501 0.750244L9.25012 3.25024"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75012 7.75024L4.75012 0.750244"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.25012 16.7502H7.25012M7.25012 16.7502H8.25012M7.25012 16.7502V11.7502L6.25012 12.2502"
+                      stroke="#C7FD02"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="achievements__name">Достижения</div>
+                <div class="achievements__text">
+                  Имею спортивный разряд — КМС по пауэрлифтингу. Участвовал в
+                  региональных соревнованиях и работал с разными уровнями
+                  подготовки от новичков до продвинутых атлетов. Сегодня
+                  объединяю спортивный опыт и научный подход, чтобы помогать
+                  людям системно двигаться к своим целям и получать удовольствие
+                  от тренировок.
+                </div>
+              </div>
+              <div class="achievements__right">
+                <img
+                  class="achievements__img desktop"
+                  src="/images/catch4.avif"
+                  alt="соревнования"
+                />
+                <img
+                  class="achievements__img mobile"
+                  src="/images/coatch4_mobile.avif"
+                  alt="соревнования"
+                />
+              </div>
+            </div>
+            <p class="ctaText">
+              <span class="growthpoint">Вперед, </span>к созданию тела мечты!
+            </p>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="about__container">
+            <div class="about__logo">
+              <span data-speed="0.95" class="about__logo--text"
+                >Тренировки </span
+              ><span data-speed="0.95" class="about__logo--text">со </span
+              ><span data-speed="0.95" class="about__logo--text">мной</span>
+            </div>
+            <div class="about__trener">
+              <img
+                class="about__image"
+                src="/images/coatch3.webp"
+                alt="Фото тренера"
+              />
+              <div data-speed="1.08" class="about__card about__card--one">
+                <p class="about__card-title">Удобно</p>
+                <p class="about__card-text">
+                  Онлайн-формат позволяет заниматься в удобное время и
+                  оставаться на связи: отвечаю на вопросы, корректирую
+                  программу, помогаю с мотивацией и сопровождаю на всём пути к
+                  результату.
+                </p>
+              </div>
+              <div data-speed="1.1" class="about__card about__card--two">
+                <p class="about__card-title">Без надрыва</p>
+                <p class="about__card-text">
+                  Я помогу сделать тренировки частью вашей жизни, а не её
+                  центром. Без перегрузок, без жёстких ограничений и в темпе,
+                  который получится поддерживать долго.
+                </p>
+              </div>
+              <div data-speed="1.1" class="about__card about__card--three">
+                <p class="about__card-title">
+                  Индивидуальный<br />подход к каждому
+                </p>
+              </div>
+              <div data-speed="1.15" class="about__card about__card--four">
+                <p class="about__card-title">Эффективно</p>
+                <p class="about__card-text">
+                  Опираюсь на современные принципы тренировок и восстановления,
+                  чтобы вы понимали, почему делаете каждое упражнение и за счёт
+                  чего получаете результат.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cases">
+          <div class="cases__container">
+            <div class="cases__logo">КЕЙСЫ ДО / ПОСЛЕ</div>
+            <div class="cases__wrapper">
+              <div class="case case--one">
+                <div
+                  data-image-container-index="1"
+                  class="case__image__container"
+                >
+                  <img
+                    src="/images/case1.avif"
+                    alt="фото кейс 1"
+                    class="case__img case__img--one"
+                  />
+                </div>
+                <div
+                  class="case__message__container case__message__container--one"
+                >
+                  Честно, не думала, что смогу худеть без жестких диет. Меню
+                  оказалось очень простым, а тренировки реально можно делать
+                  дома.<br /><br />Спасибо ❤️<br />Уже даже вещи стали сидеть
+                  совсем по-другому.
+                </div>
+              </div>
+              <div class="case case--two">
+                <div
+                  data-image-container-index="2"
+                  class="case__image__container"
+                >
+                  <img
+                    src="/images/case2.avif"
+                    alt="фото кейс 2"
+                    class="case__img case__img--two"
+                  />
+                </div>
+                <div
+                  class="case__message__container case__message__container--two"
+                >
+                  Всегда откладывал занятия на потом и думал, что у меня просто
+                  "нет силы воли". Оказалось, проблема была не во мне, а в
+                  отсутствии нормального плана. Сейчас уже вижу результат в
+                  зеркале и понимаю, что это только начало.<br /><br />Спасибо
+                  за мотивацию!
+                </div>
+              </div>
+              <div class="case case--three">
+                <div
+                  class="case__message__container case__message__container--three"
+                >
+                  Долго не мог выйти из плато. Вес на штанге не рос вообще.
+                  После корректировки тренировок и питания наконец-то снова
+                  пошёл прогресс.<br /><br />Огромное спасибо за помощь и
+                  постоянную обратную связь!
+                </div>
+                <div
+                  data-image-container-index="3"
+                  class="case__image__container"
+                >
+                  <img
+                    src="/images/case3.avif"
+                    alt="фото кейс 3"
+                    class="case__img case__img--tree"
+                  />
+                </div>
+              </div>
+              <div class="case case--four">
+                <div
+                  class="case__message__container case__message__container--four"
+                >
+                  После рождения ребёнка долго не могла вернуть прежнюю форму.
+                  Больше всего переживала, что не хватает времени и сил на себя.
+                  Программа оказалась очень удобной, а тренировки легко
+                  получилось встроить в повседневную жизнь. Постепенно вернулась
+                  лёгкость, ушёл лишний вес, и я снова стала чувствовать себя
+                  уверенно.
+                </div>
+                <div
+                  data-image-container-index="4"
+                  class="case__image__container"
+                >
+                  <img
+                    src="/images/case4.avif"
+                    alt="фото кейс 4"
+                    class="case__img case__img--four"
+                  />
+                </div>
+              </div>
+              <div class="case case--five">
+                <div
+                  data-image-container-index="5"
+                  class="case__image__container"
+                >
+                  <img
+                    src="/images/case5.avif"
+                    alt="фото кейс 5"
+                    class="case__img case__img--five"
+                  />
+                </div>
+                <div
+                  class="case__message__container case__message__container--five"
+                >
+                  Всегда мечтала выйти на сцену в категории фитнес-бикини, но
+                  самой было сложно грамотно подготовиться. Вместе выстроили
+                  тренировки, питание и подводку к старту. В итоге впервые вышла
+                  на соревнования уверенной в себе и своей форме.
+                </div>
+              </div>
+              <div class="case case--six">
+                <div
+                  data-image-container-index="6"
+                  class="case__image__container"
+                >
+                  <img
+                    src="/images/case6.avif"
+                    alt="фото кейс 6"
+                    class="case__img case__img--six"
+                  />
+                </div>
+                <div
+                  class="case__message__container case__message__container--six"
+                >
+                  Всю жизнь была пухленькой и не верила, что смогу изменить свою
+                  форму. Постоянно начинала диеты, но результата надолго не
+                  хватало. С тренировками и питанием наконец появился понятный
+                  план. Без жёстких ограничений и постоянного стресса получилось
+                  прийти к форме, о которой давно мечтала.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services">
+          <div class="services__container">
+            <div class="services__logo">ТАРИФНЫЕ ПЛАНЫ</div>
+            <div class="services__wrapper" id="sliderWrapper">
+              <div class="services__track" id="sliderTrack">
+                <article class="services__card">
+                  <p class="services__title">Пробное занятие</p>
+                  <p class="services__text">
+                    Вводная ознакомительная тренировка, которая включает беседу
+                    о целях, оценку физической формы и практическую часть.
+                    Разберём технику выполнения базовых упражнений и составим
+                    план на дальнейшие тренировки. Онлайн или в зале — выбирай
+                    формат, который удобнее именно тебе.
+                  </p>
+                  <div class="services__prices">
+                    <div class="services__price">
+                      <span>1 тренировка</span><strong>2 500 ₽</strong>
+                    </div>
+                  </div>
+                </article>
+                <article class="services__card services__card--accent">
+                  <p class="services__title">Оффлайн тренировки</p>
+                  <p class="services__text">
+                    Индивидуальные тренировки в тренажёрном зале с постановкой
+                    техники, контролем нагрузки и рекомендациями по питанию.
+                    Готовый план тренировок адаптированный именно под ваши
+                    цели.<br /><br />Только Санкт-Петербург.
+                  </p>
+                  <div class="services__prices">
+                    <div class="services__price">
+                      <span>10 тренировок</span><strong>20 000 ₽</strong>
+                    </div>
+                  </div>
+                </article>
+                <article class="services__card">
+                  <div class="services__badge">Популярно</div>
+                  <p class="services__title">Онлайн тренировки</p>
+                  <p class="services__text">
+                    Всё необходимое для эффективных тренировок: индивидуальная
+                    программа, рекомендации по питанию, контроль прогресса,
+                    корректировка нагрузки и постоянная обратная связь в удобном
+                    онлайн формате. Тренируйтесь в подходящее время независимо
+                    от вашего города.
+                  </p>
+                  <div class="services__prices">
+                    <div class="services__price">
+                      <span>1 месяц</span><strong>15 000 ₽</strong>
+                    </div>
+                  </div>
+                </article>
+                <article class="services__card">
+                  <p class="services__title">План питания</p>
+                  <p class="services__text">
+                    Подойдёт тем, кто уже занимается самостоятельно или тем, кто
+                    хочет скорректировать форму с помощью питания. Вы получите:
+                    оценку текущей формы, персональный план с несколькими
+                    вариантами разнообразного рациона, составленными с учётом
+                    ваших целей и предпочтений.
+                  </p>
+                  <div class="services__prices">
+                    <div class="services__price">
+                      <span>Единоразово</span><strong>5 000 ₽</strong>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="services__nav">
+              <button class="services__btn" id="prevBtn" aria-label="Назад">
+                ‹</button
+              ><button class="services__btn" id="nextBtn" aria-label="Вперёд">
+                ›
+              </button>
+            </div>
+          </div>
+          <div class="services__offer">
+            <div class="services__offer-content">
+              <p class="services__offer__title">
+                <svg
+                  width="37"
+                  height="36"
+                  viewBox="0 0 37 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M36.1963 25.8786C37.0864 23.421 37.2409 20.7572 36.641 18.2131C36.5032 17.226 36.171 16.2761 35.6635 15.4184C35.1561 14.5606 34.4835 13.8121 33.6847 13.2161C33.1217 13.0458 32.521 13.0458 31.958 13.2161C31.1731 13.373 30.0743 13.687 29.1325 13.9486C29.5828 11.9729 29.4924 9.9123 28.8708 7.98359C27.99 5.16094 26.0614 2.78293 23.4814 1.33837C22.4477 0.818892 21.3597 0.415285 20.2373 0.134903C19.6847 -0.0449675 19.0893 -0.0449675 18.5367 0.134903C18.268 0.287314 18.0368 0.498045 17.8602 0.751592C17.6836 1.00514 17.5661 1.29505 17.5164 1.59999C17.2809 2.59416 17.3071 4.84412 16.7839 6.83245C16.4907 7.83057 16.0403 8.77556 15.4496 9.63182C14.8836 10.4604 14.1534 11.1639 13.3043 11.6986C13.1806 11.7941 13.0288 11.8459 12.8726 11.8459C12.7164 11.8459 12.5646 11.7941 12.4409 11.6986C11.5377 10.7668 10.5765 9.89298 9.56306 9.08241C8.80393 8.65389 7.98325 8.34503 7.12996 8.16673C6.84143 8.11579 6.54479 8.13689 6.26638 8.22818C5.98797 8.31946 5.73642 8.47809 5.53406 8.68998C5.27536 9.04605 5.0806 9.44443 4.95849 9.86728C4.81473 10.8272 4.58712 11.7726 4.27827 12.6928C3.46725 13.9225 2.59404 15.1101 1.66204 16.2509C1.24641 16.8486 0.895607 17.4888 0.615549 18.1607C0.168777 19.247 -0.0390907 20.4166 0.00605054 21.5903C0.0511918 22.764 0.348286 23.9142 0.877172 24.9629C2.43361 27.8309 4.71613 30.2398 7.49624 31.9483C8.73121 32.639 10.0385 33.1918 11.3944 33.5965C13.3393 34.2094 15.3235 34.6902 17.3333 35.0354C21.0217 35.3877 24.7369 34.7369 28.086 33.1517C31.5648 31.7634 34.4386 29.1862 36.1963 25.8786ZM17.4641 33.1779C15.5442 32.9069 13.6468 32.4959 11.7869 31.9483C10.5749 31.6414 9.40598 31.1844 8.30727 30.5878C5.85808 29.0175 3.8714 26.8231 2.55156 24.2304C2.16845 23.4114 1.96987 22.5183 1.96987 21.6142C1.96987 20.71 2.16845 19.8169 2.55156 18.9979C2.79651 18.4856 3.08538 17.9954 3.41492 17.5328C4.3306 16.3032 5.40325 15.309 6.29277 13.8701C6.46618 13.554 6.60646 13.2209 6.71137 12.8759C6.8945 12.3004 6.97299 11.5417 7.1038 10.9923C7.49623 11.1492 8.12413 11.2016 8.25494 11.28C8.83827 11.7726 9.34912 12.3451 9.77236 12.9806C10.2702 13.571 10.8848 14.052 11.5776 14.3934C12.0582 14.5969 12.5814 14.6796 13.1014 14.6339C13.6214 14.5883 14.1222 14.4159 14.5601 14.1317C15.7763 13.4384 16.8221 12.482 17.621 11.3324C18.4461 10.2407 19.0666 9.00865 19.4524 7.69581C20.0183 6.24482 20.4219 4.73566 20.6559 3.19589C21.1299 3.39991 21.5851 3.64503 22.0163 3.92844C23.9276 4.98118 25.3677 6.72052 26.0453 8.79463C26.7166 10.8638 26.5668 13.1118 25.6267 15.0736C25.6267 15.0736 25.6267 17.3235 27.2749 17.1927C27.8243 17.1927 29.1848 16.9573 29.3679 16.9049C31.5132 16.3032 33.2138 13.8178 34.1818 19.8874C34.5076 21.5647 34.3812 23.2984 33.8155 24.9106C32.3879 27.7773 29.9583 30.0207 26.9872 31.2157C24.0543 32.7349 20.7586 33.4139 17.4641 33.1779Z"
+                    fill="#ccff00"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.1006 21.4833C20.6323 21.2811 20.1399 21.1404 19.6355 21.0647C18.6937 20.9077 17.7257 21.0647 16.81 20.803C15.9556 20.664 15.1527 20.3032 14.4815 19.7566C13.8 19.2257 13.3201 18.4781 13.1211 17.6374C13.1022 17.5361 13.0635 17.4394 13.0073 17.353C12.951 17.2666 12.8783 17.1921 12.7933 17.1338C12.7083 17.0755 12.6126 17.0345 12.5117 17.0132C12.4109 16.9919 12.3068 16.9906 12.2054 17.0095C12.1041 17.0284 12.0074 17.0671 11.921 17.1233C11.8346 17.1796 11.7601 17.2523 11.7018 17.3373C11.6435 17.4223 11.6025 17.518 11.5812 17.6189C11.5599 17.7198 11.5586 17.8238 11.5775 17.9252C11.5775 17.9252 11.5775 18.1083 11.5775 18.1868C11.3984 18.4576 11.2492 18.7471 11.1328 19.0502C10.9718 19.6065 10.8581 20.1753 10.7927 20.7507C10.5551 22.0639 10.6633 23.4163 11.1066 24.6751C11.5611 25.9648 12.3246 27.1235 13.3304 28.05C14.6588 29.202 16.3356 29.8746 18.0919 29.9599C19.0311 30.0364 19.9754 29.8996 20.8543 29.5598C21.7332 29.2201 22.5239 28.686 23.1674 27.9977C23.5655 27.5633 23.852 27.0387 24.0024 26.469C24.1528 25.8993 24.1626 25.3017 24.0308 24.7274C23.8052 24.0074 23.4265 23.3446 22.9207 22.7847C22.4149 22.2247 21.794 21.7808 21.1006 21.4833ZM20.9175 26.0878C20.5716 26.424 20.162 26.6875 19.7126 26.8628C19.2633 27.038 18.7834 27.1215 18.3012 27.1082C17.1243 27.1385 15.9687 26.79 15.0048 26.114C14.2417 25.5548 13.6375 24.8064 13.2519 23.9425C12.8213 23.0474 12.6319 22.0554 12.7025 21.0647C12.7164 20.9167 12.7164 20.7678 12.7025 20.6199L13.1996 21.0647C14.0689 21.9245 15.139 22.554 16.3129 22.896C17.0978 23.1053 17.935 23.21 18.746 23.3931C19.1454 23.4849 19.532 23.6255 19.8971 23.8117C20.4244 24.0921 20.8398 24.5445 21.0744 25.0937C21.1641 25.2528 21.1973 25.4376 21.1688 25.618C21.1403 25.7985 21.0518 25.964 20.9175 26.0878Z"
+                    fill="#ccff00"
+                  /></svg
+                ><span> СКИДКА 20% </span>на пробное занятие
+              </p>
+              <p class="services__offer__text">Запишись сейчас</p>
+            </div>
+            <a
+              href="https://telegram.org/"
+              target="_blank"
+              class="services__offer__button btn"
+            >
+              <svg
+                class="services__offer__button__svg"
+                viewBox="0 0 150 150"
+                width="150"
+                height="150"
+              >
+                <path
+                  id="circlePath"
+                  d="M 75,75 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0"
+                  fill="none"
+                />
+                <text>
+                  <textPath href="#circlePath" startOffset="0%">
+                    записаться&nbsp;&nbsp;•&nbsp;&nbsp;записаться&nbsp;&nbsp;•&nbsp;&nbsp;записаться&nbsp;&nbsp;•&nbsp;&nbsp;
+                  </textPath>
+                </text>
+              </svg>
+              <div class="services__offer__arrow">
+                <span class="services__offer__icon btn__icon--top">→</span>
+                <span class="services__offer__icon btn__icon--bottom">→</span>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="questions__container">
+            <div class="questions__logo">Пополярные вопросы</div>
+            <div class="questions__list">
+              <div class="question">
+                <div class="question__preview">
+                  <div class="question__title">Как записать на тренировку</div>
+                  <button class="question__button">
+                    <span class="question__button--plus">+</span
+                    ><span class="question__button--minus">-</span>
+                  </button>
+                </div>
+                <div class="question__text">
+                  <div class="question__text__p">
+                    Напишите мне в Telegram, расскажите о своих целях и
+                    пожеланиях. Я отвечу на ваши вопросы, помогу подобрать
+                    подходящий формат тренировок и расскажу, как начать.
+                  </div>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__preview">
+                  <div class="question__title">
+                    Нужен ли зал или можно заниматься дома?
+                  </div>
+                  <button class="question__button">
+                    <span class="question__button--plus">+</span
+                    ><span class="question__button--minus">-</span>
+                  </button>
+                </div>
+                <div class="question__text">
+                  <div class="question__text__p">
+                    Заниматься можно как в тренажёрном зале, так и дома.
+                    Программа тренировок составляется с учётом ваших целей,
+                    уровня подготовки, доступного оборудования и условий, в
+                    которых вам будет удобно заниматься.
+                  </div>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__preview">
+                  <div class="question__title">
+                    Сколько времени занимает одна тренировка?
+                  </div>
+                  <button class="question__button">
+                    <span class="question__button--plus">+</span
+                    ><span class="question__button--minus">-</span>
+                  </button>
+                </div>
+                <div class="question__text">
+                  <div class="question__text__p">
+                    Продолжительность тренировки зависит от ваших целей, уровня
+                    подготовки и формата занятий. В среднем одна тренировка
+                    занимает от 60 до 90 минут. Я помогу подобрать оптимальную
+                    нагрузку, чтобы занятия были эффективными и комфортно
+                    вписывались в ваш график.
+                  </div>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__preview">
+                  <div class="question__title">
+                    Что если я давно не тренировался / нет опыта?
+                  </div>
+                  <button class="question__button">
+                    <span class="question__button--plus">+</span
+                    ><span class="question__button--minus">-</span>
+                  </button>
+                </div>
+                <div class="question__text">
+                  <div class="question__text__p">
+                    Не переживайте, это не проблема! Программа тренировок
+                    подбирается с учётом вашего текущего уровня подготовки.
+                    Начнём постепенно, разберём технику выполнения упражнений и
+                    подберём комфортную нагрузку, чтобы вы могли уверенно войти
+                    в тренировочный процесс и двигаться к своим целям.
+                  </div>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__preview">
+                  <div class="question__title">
+                    Что если есть травмы или ограничения по здоровью?
+                  </div>
+                  <button class="question__button">
+                    <span class="question__button--plus">+</span
+                    ><span class="question__button--minus">-</span>
+                  </button>
+                </div>
+                <div class="question__text">
+                  <div class="question__text__p">
+                    Подбираю программу с учётом ограничений — работаю в том
+                    числе по методикам ЛФК, поэтому умею выстраивать нагрузку
+                    безопасно даже при травмах или хронических состояниях. При
+                    необходимости согласовываю план с вашим врачом.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="contacts__container">
+            <div class="contacts__content">
+              <div class="contacts__top">
+                <p class="contacts__availability">
+                  На связи и<br />готов помочь
+                </p>
+              </div>
+              <div class="contacts__main">
+                <div class="contacts__image__mobile">
+                  <div class="contacts__image__mobile__container">
+                    <img
+                      fetchpriority="high"
+                      decoding="async"
+                      class="contacts__background"
+                      src="/images/bgForCoatch2.avif"
+                      alt="фон"
+                    />
+                    <img
+                      fetchpriority="high"
+                      decoding="async"
+                      class="contacts__person"
+                      src="/images/coatch2.webp"
+                      alt="фото тренера"
+                    />
+                  </div>
+                </div>
+                <p class="contacts__description">
+                  Давай начнём! Расскажи о своих целях и я помогу сделать первый
+                  шаг.
+                </p>
+                <div class="contacts__buttons">
+                  <a
+                    class="contacts__link contacts__link--telegram"
+                    href="https://t.me/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="contacts__link-icon">
+                      <svg
+                        width="19"
+                        height="16"
+                        viewBox="0 0 19 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.78711 9.50127L6.39673 14.4248C6.51108 14.7747 6.94191 14.8997 7.22579 14.6653L12.0331 10.6969C12.0331 10.6969 6.92468 8.70427 6.92468 8.81288C6.92468 8.92162 4.78711 9.50127 4.78711 9.50127Z"
+                          fill="#728427"
+                        />
+                        <path
+                          d="M17.4712 0.0398714C14.3318 1.28158 4.19855 5.43394 0.363202 7.00736C-0.143102 7.21509 -0.112778 7.94155 0.408622 8.10773L4.78768 9.50267L6.39222 14.4106C6.45675 14.6079 6.61973 14.7352 6.80154 14.7694C6.94916 14.7972 7.16678 10.7949 7.16678 10.7949C7.16678 10.7949 11.7703 14.2089 13.9538 15.8212C14.4918 16.2183 15.26 15.9196 15.3873 15.2632C16.0378 11.9108 17.6642 3.52842 18.2202 0.6628C18.304 0.23184 17.8794 -0.121638 17.4712 0.0398714Z"
+                          fill="#CCFF00"
+                        />
+                        <path
+                          d="M6.80097 14.7672C6.94859 14.795 7.1662 10.7926 7.1662 10.7926L14.7291 3.68888C14.7803 3.64079 14.7191 3.55983 14.659 3.5959L4.78711 9.50056L6.39165 14.4085C6.45618 14.6058 6.61915 14.733 6.80097 14.7672Z"
+                          fill="#8BA911"
+                        />
+                      </svg>
+                    </span>
+                    <span class="contacts__link-text">Telegram</span>
+                  </a>
+                  <a
+                    class="contacts__link contacts__link--instagram"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="contacts__link-icon"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 0C6.55569 0 6.24931 0.010379 5.28933 0.0542596C4.33131 0.0978775 3.67717 0.250015 3.10462 0.472571C2.51289 0.702485 2.01089 1.01031 1.5106 1.5106C1.01031 2.01089 0.702485 2.51289 0.472571 3.10462C0.250015 3.67717 0.0978775 4.33131 0.0541282 5.28933C0.010379 6.24931 0 6.55569 0 9C0 11.4443 0.010379 11.7507 0.0541282 12.7107C0.0978775 13.6687 0.250015 14.3228 0.472571 14.8954C0.702485 15.4871 1.01031 15.9891 1.5106 16.4894C2.01089 16.9897 2.51289 17.2975 3.10462 17.5274C3.67717 17.75 4.33131 17.9021 5.28933 17.9457C6.24931 17.9896 6.55569 18 9 18C11.4443 18 11.7507 17.9896 12.7107 17.9457C13.6687 17.9021 14.3228 17.75 14.8954 17.5274C15.4871 17.2975 15.9891 16.9897 16.4894 16.4894C16.9897 15.9891 17.2975 15.4871 17.5274 14.8954C17.75 14.3228 17.9021 13.6687 17.9457 12.7107C17.9896 11.7507 18 11.4443 18 9C18 6.55569 17.9896 6.24931 17.9457 5.28933C17.9021 4.33131 17.75 3.67717 17.5274 3.10462C17.2975 2.51289 16.9897 2.01089 16.4894 1.5106C15.9891 1.01031 15.4871 0.702485 14.8954 0.472571C14.3228 0.250015 13.6687 0.0978775 12.7107 0.0542596C11.7507 0.010379 11.4443 0 9 0ZM9 1.62161C11.4031 1.62161 11.6878 1.63081 12.6367 1.67416C13.5142 1.7141 13.9908 1.86072 14.3079 1.98396C14.728 2.14726 15.0278 2.34236 15.3427 2.65728C15.6576 2.97219 15.8527 3.272 16.016 3.69215C16.1393 4.00917 16.2859 4.48581 16.3258 5.36316C16.3692 6.31224 16.3784 6.59694 16.3784 9C16.3784 11.4031 16.3692 11.6878 16.3258 12.6367C16.2859 13.5142 16.1393 13.9908 16.016 14.3079C15.8527 14.728 15.6576 15.0278 15.3427 15.3427C15.0278 15.6576 14.728 15.8527 14.3079 16.016C13.9908 16.1393 13.5142 16.2859 12.6367 16.3258C11.6879 16.3692 11.4032 16.3784 9 16.3784C6.59668 16.3784 6.31211 16.3692 5.36329 16.3258C4.48581 16.2859 4.00917 16.1393 3.69202 16.016C3.272 15.8527 2.97219 15.6576 2.65728 15.3427C2.34236 15.0278 2.14726 14.728 1.98396 14.3079C1.86072 13.9908 1.7141 13.5142 1.67416 12.6368C1.63081 11.6878 1.62161 11.4031 1.62161 9C1.62161 6.59694 1.63081 6.31224 1.67416 5.36329C1.7141 4.48581 1.86072 4.00917 1.98396 3.69215C2.14726 3.272 2.34236 2.97219 2.65728 2.65728C2.97219 2.34236 3.272 2.14726 3.69202 1.98396C4.00917 1.86072 4.48581 1.7141 5.36316 1.67416C6.31224 1.63081 6.59694 1.62161 9 1.62161Z"
+                          fill="#CCFF00"
+                        />
+                        <path
+                          d="M9.00043 12.0005C7.34361 12.0005 6.00039 10.6573 6.00039 9.00043C6.00039 7.34361 7.34361 6.00039 9.00043 6.00039C10.6573 6.00039 12.0003 7.34361 12.0003 9.00043C12.0003 10.6573 10.6573 12.0005 9.00043 12.0005ZM9.00043 4.37891C6.448 4.37891 4.37891 6.448 4.37891 9.00043C4.37891 11.5529 6.448 13.622 9.00043 13.622C11.5529 13.622 13.622 11.5529 13.622 9.00043C13.622 6.448 11.5529 4.37891 9.00043 4.37891Z"
+                          fill="#CCFF00"
+                        />
+                        <path
+                          d="M14.8846 4.19615C14.8846 4.79274 14.401 5.27622 13.8047 5.27622C13.2081 5.27622 12.7246 4.79274 12.7246 4.19615C12.7246 3.59982 13.2081 3.11621 13.8047 3.11621C14.401 3.11621 14.8846 3.59982 14.8846 4.19615Z"
+                          fill="#CCFF00"
+                        /></svg></span
+                    ><span class="contacts__link-text">Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__image-wrapper">
+              <img
+                fetchpriority="high"
+                decoding="async"
+                class="contacts__img"
+                src="/images/coatch2.webp"
+                alt="фото тренера"
+              />
+            </div>
+          </div>
+          <div class="contacts__footer">
+            <div class="contacts__footer__container">
+              <p class="contacts__rules desktop">
+                * Instagram принадлежит компании Meta, признанной<br />⠀экстремистской
+                организацией и запрещённой в РФ.
+              </p>
+              <p class="contacts__rules mobile">
+                * Instagram принадлежит компании Meta, признанной экстремистской
+                организацией и запрещённой в РФ.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <span class="header__logo--container"
+            ><svg
+              class="header__logo__icon"
+              width="269"
+              height="219"
+              viewBox="0 0 269 219"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M134.5 195C134.5 195 38 138.9 38 81.1C38 47.1 56.6228 25 85.4035 25C109.105 25 127.728 40.3 134.5 64.1C141.272 40.3 159.895 25 183.596 25C212.377 25 231 47.1 231 81.1C231 138.9 134.5 195 134.5 195Z"
+                stroke="#FFFFFE"
+                stroke-opacity="0.7"
+                stroke-width="12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="pulse__line"
+                d="M13 104H56.7072H93.4492C94.0698 104 94.6553 104.288 95.0339 104.78L123.845 142.201C124.794 143.433 126.723 143.159 127.291 141.713L152.26 78.1565C152.817 76.7388 154.691 76.4392 155.662 77.6127L176.9 103.275C177.28 103.734 177.816 104 178.412 104C185.108 104 227.208 104 255 104"
+                stroke="#C7F900"
+                stroke-width="12"
+                stroke-linecap="round"
+              /></svg
+          ></span>
+          <p class="header__logo__text">ВЛАД<br />ОРЛОВ</p>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__li">
+              <a href="#home" class="split__wrapper main__header__button"
+                ><span class="split__text split__text--top">Главная</span
+                ><span class="split__text split__text--bottom">Главная</span></a
+              >
+            </li>
+            <li class="header__li">
+              <a href="#whyme" class="split__wrapper about__header__button"
+                ><span class="split__text split__text--top">Обо мне</span
+                ><span class="split__text split__text--bottom">Обо мне</span></a
+              >
+            </li>
+            <li class="header__li">
+              <a
+                href="#services"
+                class="split__wrapper services__header__button"
+                ><span class="split__text split__text--top">Услуги</span
+                ><span class="split__text split__text--bottom">Услуги</span></a
+              >
+            </li>
+            <li class="header__li contacts__button">
+              <a
+                href="#contacts"
+                class="split__wrapper services__header__button"
+              >
+                <span class="split__text split__text--top">Контакты</span>
+                <span class="split__text split__text--bottom">Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__button btn--primary contacts__button">
+          <div class="btn__text--wrapper header__button__text--wrapper">
+            <span class="btn__text btn__text--top">Связаться</span
+            ><span class="btn__text btn__text--bottom">Связаться</span>
+          </div></button
+        ><button
+          class="header__burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <div class="header__burger__menu">
+      <nav class="header__burger__nav">
+        <p class="header__burger__nav__title">Навигация</p>
+        <ul class="header__burger__ul">
+          <li class="header__burger__li"><a href="#home">Главная</a></li>
+          <li class="header__burger__li"><a href="#whyme">Обо мне</a></li>
+          <li class="header__burger__li"><a href="#services">Услуги</a></li>
+          <li class="header__burger__li"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <nav class="header__burger__nav">
+        <p class="header__burger__nav__title">Контакты</p>
+        <ul class="header__burger__ul">
+          <li class="header__burger__li">
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer"
+              >Telegram</a
+            >
+          </li>
+          <li class="header__burger__li">
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="cases__image__viewer">
+      <button
+        class="cases__image__viewer-close"
+        type="button"
+        aria-label="Закрыть изображение"
+      >
+        ×</button
+      ><img class="cases__image__viewer-img" src="" alt="" />
+    </div>
+  </body>
+</html>
